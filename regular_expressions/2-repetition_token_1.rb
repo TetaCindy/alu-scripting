@@ -1,10 +1,10 @@
 #!/usr/bin/env ruby
 # 2-repetition_token_1.rb
 
-# Get the argument
-str = ARGV[0]
+# Get the argument and remove any trailing newline
+str = ARGV[0].strip
 
-# Regex using Oniguruma (Ruby default)
-if str =~ /^hb?t?n$/
+# Regex using Oniguruma
+if str.match?(/^hb?t?n$/)
   puts str
 end

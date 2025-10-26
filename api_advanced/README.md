@@ -58,6 +58,28 @@ Recursive function that queries the Reddit API and returns a list containing the
 python3 2-main.py programming
 ```
 
+### 3. Count it!
+Recursive function that queries the Reddit API, parses titles of all hot articles, and prints a sorted count of given keywords.
+
+**File:** `3-count.py`
+
+**Prototype:** `def count_words(subreddit, word_list)`
+
+**Prints:** Sorted count of keywords (descending by count, then alphabetically)
+
+**Features:**
+* Case-insensitive keyword matching
+* Exact word matching (no partial matches)
+* Counts all occurrences across all titles
+* Handles duplicate keywords in word_list
+* Prints nothing for invalid subreddits or no matches
+
+**Usage:**
+```bash
+python3 3-main.py programming 'python java javascript'
+python3 3-main.py programming 'JavA java'
+```
+
 ## Repository
 * **GitHub repository:** `alu-scripting`
 * **Directory:** `api_advanced`
